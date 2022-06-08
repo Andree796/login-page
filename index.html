@@ -14,9 +14,18 @@
           <div class="conteiner-login--arquivos">
             <h1 class="titulo-login"><img src="/assets/logo-grab.svg" alt="Imagem logo" class="imagem-logo"></h1>
             <div class="form-login">
-              <input type="email" class="input-email">
-              <input type="text" class="input-senha">
-              <button class="button-enviar botao-layout">Enviar</button>
+              <!-- <span class="material-icons icon">
+                alternate_email
+              </span> -->
+              <input type="email" class="input-email" id="input-email" onblur="validarEmail()" onfocus="resetMensagem()">
+              <div class="texto-js">
+                <p id="elemento-texto"></p>
+              </div>
+              <!-- <span class="material-icons icon2">
+                lock
+              </span> -->
+              <input type="text" class="input-senha" id="input-senha">
+              <button class="button-enviar botao-layout" id="botao-enviar">Enviar</button>
             </div>
             <div class="itens-finais">
               <p class="texto">problemas para entrar?</p>
@@ -28,5 +37,9 @@
       <div class="wallpaper">
         <img src="/assets/undraw_interview_rmcf.svg" alt="" class="imagem">
       </div>
+      <script src="js/main.js"></script>
   </body>
 </html>
+
+
+
