@@ -47,7 +47,8 @@ body{
 
 .form-login{
     grid-row: 5;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 .icon{
